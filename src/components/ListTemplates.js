@@ -5,7 +5,7 @@ const ListTemplates = (props) => {
     const [list,setList] = useState([]);
 
     var  request  =  new  XMLHttpRequest(); 
-    request.open('GET','/dummydata/templates.json',  true);    
+    request.open('GET','https://mailmergev2.azurewebsites.net/list',  true);    
 
     request.onload = () => {
         var aux;
